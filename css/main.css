@@ -13,8 +13,17 @@
 body{
     background: #292929;
 }
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
 
 header{
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -46,6 +55,21 @@ nav a{
 }
 .link:hover{
     text-decoration: underline;
+}
+
+.infoBlock{
+    margin: 80px 0;
+    padding: 30px 50px;
+    width: 40%;
+    text-align: center;
+    color: white;
+    background: #1E1E1E;
+    border-radius: 20px;
+}
+.infoBlock h3{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 footer{
