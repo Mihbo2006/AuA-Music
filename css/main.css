@@ -9,3 +9,57 @@
     font-family: Nunito;
     src: url(../fonts/Nunito-VariableFont_wght.ttf);
 }
+
+body{
+    background: #292929;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    z-index: 9998;
+}
+
+nav{
+    padding: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+nav img{
+    margin-right: auto;
+    color: white;
+}
+nav a{
+    padding: 10px;
+    color: rgb(186, 0, 0);
+}
+
+.link{
+    color: red;
+}
+.link:hover{
+    text-decoration: underline;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    background: #1E1E1E;
+}
+footer p{
+    color: #5B5B5B;
+}
+footer #copyright{
+    color: #8E8E8E;
+    font-weight: bold;
+}
