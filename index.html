@@ -7,6 +7,17 @@
     <title>AuA Musique|Accueil</title>
 </head>
 <body>
+    <div class="popupBG">
+        <div class="popup">
+            <button class="close">X</button>
+            <form action="send()">
+                <input type="e-mail" placeholder="Votre e-mail...">
+                <input type="password" placeholder="Votre mot de passe...">
+                <input type="submit" value="S'inscrire">
+            </form>
+            <button onclick="ShowLoginPopup()">J'ai déjà un compte</button>
+        </div>
+    </div>
     <header>
         <nav>
             <img src="./img/logo.png" alt="AuA Musique">
@@ -16,6 +27,14 @@
         </nav>
     </header>
     <main>
+        <div class="screen">
+            <img src="./img/welcome.jpg" alt="">
+            <div>
+                <h1>Bienvenue sur AuA Musique!</h1>
+                <p>Écoutez la musique de votre goût gratuit, toujours et partout</p>
+            </div>
+        </div>
+
         <div class="infoBlock">
             <h3>À propos de nous</h3>
             <p>
@@ -23,11 +42,66 @@
                 d’instument pour adapter le son à vos oreilles.
             </p>
         </div>
+
+        <div class="screen small">
+            <img src="./img/welcome.jpg" alt="">
+            <div>
+                <h3>Qu’écoute-je?</h3>
+                <p>
+                    La réponse - c’est TOUT! Nous avons les genres légères (LoFi, Jazz, Ambience...), le rock-n-roll (Beatles, The Rolling Stones...) et de plus la musique des jeux-vidéos. Vous ne serez jamais ennuyé.
+                </p>
+                
+                <!-- <div class="slides">
+                    <a href="" class="slide">
+                        <img src="./img/lofi.jpg" alt="">
+                        <span>LoFi</span>
+                    </a>
+                    <a href="" class="slide">
+                        <img src="./img/rap.jpg" alt="">
+                        <span>Rap</span>
+                    </a>
+                    <a href="" class="slide">
+                        <img src="./img/techno.jpg" alt="">
+                        <span>Techno</span>
+                    </a>
+                    <a href="" class="slide">
+                        <img src="./img/classic.jpg" alt="">
+                        <span>Classique</span>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="infoBlock textLeft">
+            <h3>La version prime</h3>
+            <p>
+                Il y a 3 options de commencer écouter la musique:
+                <br><br>
+                1. Sans l’inscription (vous ne pouvez pas enregistrer vos albumes préfèrées) <br>
+                2. Avec un compte gratuit (nous allons donc donner les artistes que vous peut-être aimerez) <br>
+                3. La version PRIME. Cette version donne à vous toutes les outiles pour obtenir la meillieure expérience. De plus, vous aurez l’accées aux albumes éxclusives et vous pourrez les écouter sans la connection. <br>
+                <br>
+                Pour la version prime, vous devez payer 6 Euros par une mois ou payer 50 euros pour une anée. Pour activer AuA Musique Prime, allez ici.
+            </p>
+        </div>
+
+        <div class="screen small">
+            <img src="./img/artist.jpg" alt="">
+            <div>
+                <h3>Pour les artistes</h3>
+                <p>
+                    Si vous êtes artiste et voulez travailler avec notre service, contactez-nous ici. Nous allons vous répondre pendant 5 jours maximum. Après suivez les instruction sur mail.
+                    <br><br>
+                    Pour les postes vacants - suivez ce lien et nous allons vous contacter.
+                </p>
+            </div>
+        </div>
     </main>
     <footer>
-        <a href="mihbo2006@gmail.com" class="link">Contactez-nous si vous avez des questions</a>
+        <a href="mailto:mihbo2006@gmail.com" class="link">Contactez-nous si vous avez des questions</a>
         <p>Le site est un échatillon crée par Mykhailo Bortsov</p>
         <p id="copyright">© AuA Music 2024</p>
     </footer>
+    <script src="./js/popup.js"></script>
 </body>
 </html>
