@@ -4,26 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link type="image/x-icon" href="./img//favicon.ico" rel="icon">
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <title>AuA Musique|Accueil</title>
 </head>
 <body>
     <div class="popupBG">
         <div class="popup">
-            <button class="close">X</button>
+            <button class="closePopup">×</button>
+            <h3>S'inscrire</h3>
             <form action="send()">
-                <input type="e-mail" placeholder="Votre e-mail...">
-                <input type="password" placeholder="Votre mot de passe...">
+                <div>
+                    <input type="text" placeholder="Votre nom de compte...">
+                    <input type="number" placeholder="Votre numéro de téléphone...">
+                </div>
+                <div>
+                    <input type="e-mail" placeholder="Votre e-mail...">
+                    <input type="password" placeholder="Votre mot de passe...">
+                </div>
                 <input type="submit" value="S'inscrire">
             </form>
-            <button onclick="ShowLoginPopup()">J'ai déjà un compte</button>
+            <a href="" class="link">J'ai déjà un compte</a>
         </div>
     </div>
     <header>
         <nav>
             <img src="./img/logo.png" alt="AuA Musique">
             <a href="./index.html" id="currentNavBtn">Accueil</a>
+            <a href="./player.html">Écouter</a>
             <a href="">Prémium</a>
-            <a href="">S'inscrire</a>
+            <a href="" class="openPopup">S'inscrire</a>
         </nav>
     </header>
     <main>
@@ -44,7 +54,7 @@
         </div>
 
         <div class="screen small">
-            <img src="./img/welcome.jpg" alt="">
+            <img src="./img/headphones.jpg" alt="">
             <div>
                 <h3>Qu’écoute-je?</h3>
                 <p>
@@ -53,44 +63,118 @@
             </div>
         </div>
 
-        <div class="slides">
-            <a href="" class="slide">
-                <img src="./img/lofi.jpg" alt="">
-                <div>
-                    <span>LoFi</span>
-                </div>
-            </a>
-            <a href="" class="slide">
-                <img src="./img/rap.jpg" alt="">
-                <div>
-                    <span>Rap</span>
-                </div>
-            </a>
-            <a href="" class="slide">
-                <img src="./img/techno.jpg" alt="">
-                <div>
-                    <span>Techno</span>
-                </div>
-            </a>
-            <a href="" class="slide">
-                <img src="./img/classic.jpg" alt="">
-                <div>
-                    <span>Classique</span>
-                </div>
-            </a>
+        <div>
+            <h3 class="headTitle">Les genres de nos jours</h3>
+            <div class="slides">
+                <a href="" class="slide">
+                    <img src="./img/lofi.jpg" alt="">
+                    <div>
+                        <span>LoFi</span>
+                    </div>
+                </a>
+                <a href="" class="slide">
+                    <img src="./img/rap.jpg" alt="">
+                    <div>
+                        <span>Rap</span>
+                    </div>
+                </a>
+                <a href="" class="slide">
+                    <img src="./img/techno.jpg" alt="">
+                    <div>
+                        <span>Techno</span>
+                    </div>
+                </a>
+                <a href="" class="slide">
+                    <img src="./img/classic.jpg" alt="">
+                    <div>
+                        <span>Classique</span>
+                    </div>
+                </a>
+                <a href="" class="slide">
+                    <img src="./img/dubtechno.jpg" alt="">
+                    <div>
+                        <span>Dub Techno</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h3 class="headTitle">Les artistes populaires</h3>
+            <div class="slides">
+                <a href="" class="slide">
+                    <img src="./img/joe.jpg" alt="">
+                    <div>
+                        <span>Joe Dassin</span>
+                    </div>
+                </a>
+                <a href="" class="slide">
+                    <img src="./img/purplecat.jpg" alt="">
+                    <div>
+                        <span>Purple Car</span>
+                    </div>
+                </a>
+                <a href="" class="slide">
+                    <img src="./img/daftpunk.jpg" alt="">
+                    <div>
+                        <span>Daft Punk</span>
+                    </div>
+                </a>
+                <a href="" class="slide">
+                    <img src="./img/paul.jpg" alt="">
+                    <div>
+                        <span>Paul Van Dyk</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <div class="infoBlock textLeft">
-            <h3>La version prime</h3>
-            <p>
-                Il y a 3 options de commencer écouter la musique:
-                <br><br>
-                1. Sans l’inscription (vous ne pouvez pas enregistrer vos albumes préfèrées) <br>
-                2. Avec un compte gratuit (nous allons donc donner les artistes que vous peut-être aimerez) <br>
-                3. La version PRIME. Cette version donne à vous toutes les outiles pour obtenir la meillieure expérience. De plus, vous aurez l’accées aux albumes éxclusives et vous pourrez les écouter sans la connection. <br>
-                <br>
-                Pour la version prime, vous devez payer 6 Euros par une mois ou payer 50 euros pour une anée.
-            </p>
+        <div class="horizontal wrap">
+            <div class="card">
+                <h3>Sans l'inscription</h3>
+                <ul>
+                    <li>Vous avez accès aux albumes gratuites</li>
+                    <li>Vous ne pourrez pas enregistrer vos albumes préfèrées</li>
+                </ul>
+                <a href="./player.html" class="importantBtn">Commencer d'écouter!</a>
+            </div>
+            <div class="card bigger">
+                <h3 id="primeHeader">La version PRIME</h3>
+                <ul>
+                    <li>Vous avez accès aux albumes éxclusives</li>
+                    <li>Pas de publicités</li>
+                    <li>La meilleure qualité de son</li>
+                    <li>Plus de fonctions de notre service</li>
+                </ul>
+                <p>
+                    La version prime vous donne beaucoup de nouvelles fonctions de notre service qui vont améliorer votre
+                    expérience!
+                    <br><br>
+                    <b class="red">Égaliseur de son</b>, <b class="red">les effets de son</b>, <b class="red">les autres éditions de chanson, </b> etc...
+                    <br><br>
+                    Il y a 3 option d'utilisation de la version prime:
+                </p>
+                <div class="horizontal" id="payment">
+                    <div>
+                        <b>Gratuit</b><span>/1 mois</span>
+                    </div>
+                    <div>
+                        <b>6€</b><span>/par mois</span>
+                    </div>
+                    <div>
+                        <b>300€</b><span>/par année</span>
+                    </div>
+                </div>
+                <button class="importantBtn openPopup">Commencez maintenant!</button>
+            </div>
+            <div class="card">
+                <h3>Le compte gratuit</h3>
+                <ul>
+                    <li>Vous avez accès aux albumes gratuites</li>
+                    <li>Vous pouvez enregistrer vos albumes préfères</li>
+                    <li>Vous pouvez suivre les artistes</li>
+                </ul>
+                <a href="" class="importantBtn openPopup">S'inscrire</a>
+            </div>
         </div>
 
         <div class="screen small">

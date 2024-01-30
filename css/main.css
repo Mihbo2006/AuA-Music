@@ -13,6 +13,18 @@
 body{
     background: #292929;
 }
+.noScroll{
+    overflow-y: hidden;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.headTitle{
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+}
+
 main{
     display: flex;
     justify-content: center;
@@ -34,7 +46,6 @@ header{
 }
 
 nav{
-    padding: 15px;
     width: 70%;
     display: flex;
     justify-content: center;
@@ -48,12 +59,13 @@ nav img{
     height: 100px;
 }
 nav a{
+    margin: 5px;
     padding: 10px;
     color: rgb(186, 0, 0);
     transition: 0.5s;
     position: relative;
 }
-nav a:hover{
+nav a:hover, #currentNavBtn{
     color: rgb(255, 116, 116);
     text-shadow: 0 0 20px red;
 }
@@ -65,13 +77,14 @@ nav a::before{
     left: 0;
     width: 0%;
     height: 5%;
-    background: rgb(255, 116, 116);
-    box-shadow: 0 0 20px red;
+    background: ;
     z-index: -1;
     transition: 0.5s;
 }
-nav a:hover::before{
+nav a:hover::before, #currentNavBtn::before{
     width: 100%;
+    background: rgb(255, 116, 116);
+    box-shadow: 0 0 20px red;
 }
 
 .link{
@@ -171,13 +184,90 @@ footer #copyright{
 }
 
 .popupBG{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(15px);
     display: none;
-    z-index: 9998;
+    z-index: 9999;
+}
+
+.popup{
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    position: relative;
+    color: white;
+    background: rgb(14, 14, 14);
+}
+.popup h3{
+    font-size: 25px;
+}
+.popup .closePopup{
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    border: none;
+    background: rgba(0,0,0,0);
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.popup .closePopup:hover{
+    color:rgb(255, 116, 116);
+    text-shadow: 0 0 20px red;
+}
+.popup form{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.popup form input{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background: #5B5B5B;
+    font-size: 18px;
+    border: none;
+}
+.popup div{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.popup input[type="submit"], .importantBtn{
+    margin: 20px 0;
+    padding: 10px;
+    position: relative;
+    background: none;
+    cursor: pointer;
+    width: 300px;
+    color: white;
+    background: red;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    transition: 0.4s;
+}
+.popup input[type="submit"]:hover, .importantBtn:hover{
+    color: red;
+    background: white;
 }
 
 .slides{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -192,10 +282,10 @@ footer #copyright{
 }
 .slide div{
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -207,7 +297,7 @@ footer #copyright{
     transition: 0.4s;
 }
 .slide:hover div{
-    top: 0;
+    bottom: 0;
 }
 .slide div span{
     color: rgba(255, 255, 255, 0);
@@ -215,4 +305,60 @@ footer #copyright{
 }
 .slide:hover span{
     color: white;
+}
+
+.horizontal{
+    display: flex;
+    flex-direction: row;
+}
+.horizontal.wrap{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+}
+.red{
+    color: red;
+}
+
+.card{
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 400px;
+    min-width: 200px;
+    background: #1E1E1E;
+    color: white;
+}
+.card h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.card p, .card ul{
+    margin-bottom: 20px;
+}
+.card a{
+    text-align: center;
+}
+
+.card.bigger{
+    width: 500px;
+}
+
+#primeHeader{
+    color: red;
+}
+#payment div{
+    margin: 0 20px;
+    text-align: center;
+}
+#payment b{
+    color: red;
+    font-size: 24px;
 }
