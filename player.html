@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/player.css">
+    <link type="image/x-icon" href="./img//favicon.ico" rel="icon">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <title>AuA Musique|Écouter</title>
+</head>
+<body>
+    <div class="popupBG">
+        <div class="popup">
+            <button class="closePopup">×</button>
+            <h3>Se connecter</h3>
+            <form action="send()">
+                <div>
+                    <input type="text" placeholder="Votre nom de compte ou e-mail...">
+                    <input type="text" placeholder="Votre mot de passe...">
+                </div>
+                <input type="submit" value="Se connecter">
+            </form>
+            <a href="" class="link">Je n'ai pas de compte</a>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div id="clockContainer">
+                <span class="clock"></span>
+            </div>
+            <a href="./player.html" id="currentNavBtn">Accueil</a>
+            <a href="">Hits</a>
+            <a href="" class="openPopup">Bibliothéque</a>
+            <a href="" class="openPopup" id="account">Se connecter</a>  
+        </nav>
+    </header>
+
+    <main>
+        <input type="text" class="textField" placeholder="Rechercher...">
+        <div class="playlists">
+            <h1>Les pistes des jeux-vidéos</h1>
+            <div class="horizontal" id="carousel">
+                <a href="#" class="playlist song" data-path="./audio/Miracle of Sound - Deep Blue.mp3">
+                    <img src="./img/albums/subnautica.jpg" width="300px" height="300px" alt="Deep Blue">
+                    <div>
+                        <p>Miracle of Sound - Deep Blue</p>
+                    </div>
+                </a>
+
+                <a href="" class="playlist song">
+                    <img src="./img/albums/ut.jpg" width="300px" height="300px" alt="Mechanism 8">
+                    <div>
+                        <p>Epic Games - Mechanism 8</p>
+                    </div>
+                </a>
+
+                <a href="" class="playlist song">
+                    <img src="./img/albums/aperture.jpg" width="300px" height="300px" alt="Almost at 50%">
+                    <div>
+                        <p>Aperture Science Psychoacoustic Laboratories - Almost at 50%</p>
+                    </div>
+                </a>
+
+                <a href="" class="playlist song" id="test">
+                    <img src="./img/albums/aperture.jpg" width="300px" height="300px" alt="Almost at 50%">
+                    <div>
+                        <p>Aperture Science Psychoacoustic Laboratories - Almost at 50%</p>
+                    </div>
+                </a>
+
+                <a href="" class="playlist song" id="test">
+                    <img src="./img/albums/aperture.jpg" width="300px" height="300px" alt="Almost at 50%">
+                    <div>
+                        <p>Aperture Science Psychoacoustic Laboratories - Almost at 50%</p>
+                    </div>
+                </a>
+
+                <button onclick="Previous()" class="previousBtn"><img src="" width="20px" height="20px" alt="<"></button>
+                <button onclick="Next()" class="nextBtn"><img src="" width="20px" height="20px" alt=">"></button>
+            </div>
+        </div>
+
+        <div class="playlists">
+            <h1>Soft Rock</h1>
+            <div class="horizontal">
+                <a href="" class="playlist">
+                    <img src="./img/albums/faunts.jpg" width="300px" height="300px" alt="Faunts">
+                    <div>
+                        <p>High Expectations/Low Results</p>
+                        <span>Faunts/</span><span>2004</span>
+                    </div>
+                </a>
+
+                <a href="" class="playlist">
+                    <img src="./img/albums/direstraits.jpg" width="300px" height="300px" alt="Dire Straits">
+                    <div>
+                        <p>Brothers in Arms</p>
+                        <span>Dire Straits/</span><span>1985</span>
+                    </div>
+                </a>
+
+                <a href="" class="playlist">
+                    <img src="./img/albums/eagles.jpg" width="300px" height="300px" alt="Eagles">
+                    <div>
+                        <p>Long Road out of Eden</p>
+                        <span>Eagles/</span><span>1985</span>
+                    </div>
+                </a>
+            </div>  
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p id="trackTitle">Le nom de musique</p>
+            <div class="horizontal">
+                <button id="previous"><img src="./img/icons/previous.png" width="30" alt="<"></button>
+                <button id="play"><img src="./img/icons/play.png" width="30" alt="-"></button>
+                <button id="next"><img src="./img/icons/next.png" width="30" alt=">"></button>
+            </div>
+            <div>
+                <button><img src="./img/icons/repeat.png" width="30" alt="Répéte"></button>
+                <button><img src="./img/icons/like.png" width="20" title="Favoriser" alt="Favoriser" class="openPopup"></button>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/clock.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/popup.js"></script>
+</body>
+</html>

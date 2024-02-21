@@ -1,0 +1,44 @@
+#clockContainer{
+    margin-right: auto;
+    color: white;
+    font-weight: lighter;
+}
+
+footer{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(15px);
+}
+footer div{
+    text-align: center;
+}
+
+footer button{
+    margin: 0 20px;
+    border: none;
+    background: none;
+    color: red;
+    cursor: pointer;
+    transition: 0.4s;
+}
+footer button:hover{
+    transform: scale(1.1);
+}
+
+#trackTitle{
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+main{
+    margin: 100px 0;
+}

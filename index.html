@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link type="image/x-icon" href="./img//favicon.ico" rel="icon">
     <script src="./js/jquery-3.7.1.min.js"></script>
     <title>AuA Musique|Accueil</title>
@@ -32,7 +33,7 @@
             <img src="./img/logo.png" alt="AuA Musique">
             <a href="./index.html" id="currentNavBtn">Accueil</a>
             <a href="./player.html">Écouter</a>
-            <a href="">Prémium</a>
+            <a href="#premium">Prémium</a>
             <a href="" class="openPopup">S'inscrire</a>
         </nav>
     </header>
@@ -45,26 +46,30 @@
             </div>
         </div>
 
-        <div class="infoBlock">
-            <h3>À propos de nous</h3>
-            <p>
-                AuA Musique - c’est un service du streaming de musique qui peut vous donner une agréable expérience. Nous avons toutes les genres de musique, beaucoup d’artistes et bon nombre 
-                d’instument pour adapter le son à vos oreilles.
-            </p>
+        <div class="screen">
+            <img src="./img/about.avif" alt="">
+            <div>
+                <h1>À propos de nous</h1>
+                <p>
+                    AuA Musique - c’est un service du streaming de musique qui peut vous donner une agréable expérience. Nous avons toutes les genres de musique, beaucoup d’artistes et bon nombre 
+                    d’instument pour adapter le son à vos oreilles.
+                </p>
+            </div>
         </div>
 
-        <div class="screen small">
+        <div class="screen">
             <img src="./img/headphones.jpg" alt="">
             <div>
-                <h3>Qu’écoute-je?</h3>
+                <h1>Commencez d'écouter!</h1>
                 <p>
-                    La réponse - c’est TOUT! Nous avons les genres légères (LoFi, Jazz, Ambience...), le rock-n-roll (Beatles, The Rolling Stones...) et de plus la musique des jeux-vidéos. Vous ne serez jamais ennuyé.
+                    Si vous vous posez une question: "Qu'est-ce que j'écoute?", nous vous donnons la réponse: "C'est tout!"
+                    Nous qvons énormement d'artistes de genres differents. Voici quelques qui sont célèbres sur notre service:
                 </p>
             </div>
         </div>
 
         <div>
-            <h3 class="headTitle">Les genres de nos jours</h3>
+            <h3 class="headTitle">Écoutez les genres populaires</h3>
             <div class="slides">
                 <a href="" class="slide">
                     <img src="./img/lofi.jpg" alt="">
@@ -90,16 +95,10 @@
                         <span>Classique</span>
                     </div>
                 </a>
-                <a href="" class="slide">
-                    <img src="./img/dubtechno.jpg" alt="">
-                    <div>
-                        <span>Dub Techno</span>
-                    </div>
-                </a>
             </div>
         </div>
         <div>
-            <h3 class="headTitle">Les artistes populaires</h3>
+            <h3 class="headTitle">Écoutez les artistes populaires</h3>
             <div class="slides">
                 <a href="" class="slide">
                     <img src="./img/joe.jpg" alt="">
@@ -128,7 +127,8 @@
             </div>
         </div>
 
-        <div class="horizontal wrap">
+        <h3 class="headTitle">La version prime</h3>
+        <div class="horizontal wrap" id="premium">
             <div class="card">
                 <h3>Sans l'inscription</h3>
                 <ul>
@@ -190,10 +190,11 @@
         </div>
     </main>
     <footer>
-        <a href="mailto:mihbo2006@gmail.com" class="link">Contactez-nous si vous avez des questions</a>
+        <a href="mailto:mihbo2006@gmail.com" class="link">Contactez-nous</a>
         <p>Le site est un échatillon crée par Mykhailo Bortsov</p>
         <p id="copyright">© AuA Inc. 2024</p>
     </footer>
     <script src="./js/popup.js"></script>
+    <script src="./js/time.js"></script> <!--To change the date of the copyright-->
 </body>
 </html>
