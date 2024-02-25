@@ -9,7 +9,6 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     width: 100%;
     position: fixed;
@@ -22,15 +21,11 @@ footer div{
 }
 
 footer button{
-    margin: 0 20px;
+    margin: 0 5px;
     border: none;
     background: none;
     color: red;
     cursor: pointer;
-    transition: 0.4s;
-}
-footer button:hover{
-    transform: scale(1.1);
 }
 
 #trackTitle{

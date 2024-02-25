@@ -24,6 +24,7 @@
             <a href="" class="link">Je n'ai pas de compte</a>
         </div>
     </div>
+
     <header>
         <nav>
             <div id="clockContainer">
@@ -35,44 +36,51 @@
             <a href="" class="openPopup" id="account">Se connecter</a>  
         </nav>
     </header>
-
+    
     <main>
         <input type="text" class="textField" placeholder="Rechercher...">
         <div class="playlists">
             <h1>Les pistes des jeux-vidéos</h1>
             <div class="horizontal" id="carousel">
-                <a href="#" class="playlist song" data-path="./audio/Miracle of Sound - Deep Blue.mp3">
+                <a href="#" class="playlist song" data-path="./audio/Simon Chylinski - Abandon Ship.mp3">
                     <img src="./img/albums/subnautica.jpg" width="300px" height="300px" alt="Deep Blue">
+                    <div>
+                        <p>Simon Chylinski - Abandon Ship</p>
+                    </div>
+                </a>
+
+                <a href="#" class="playlist song" data-path="./audio/Miracle of Sound - Deep Blue.mp3">
+                    <img src="./img/albums/subnautica_bz.jpg" width="300px" height="300px" alt="Deep Blue">
                     <div>
                         <p>Miracle of Sound - Deep Blue</p>
                     </div>
                 </a>
 
-                <a href="" class="playlist song">
+                <a href="#" class="playlist song" data-path="./audio/Epic Games - Mechanism 8.mp3">
                     <img src="./img/albums/ut.jpg" width="300px" height="300px" alt="Mechanism 8">
                     <div>
                         <p>Epic Games - Mechanism 8</p>
                     </div>
                 </a>
 
-                <a href="" class="playlist song">
+                <a href="#" class="playlist song" data-path="./audio/Aperture Science Psychoacoustic Laboratories - Almost at 50%.mp3">
                     <img src="./img/albums/aperture.jpg" width="300px" height="300px" alt="Almost at 50%">
                     <div>
                         <p>Aperture Science Psychoacoustic Laboratories - Almost at 50%</p>
                     </div>
                 </a>
 
-                <a href="" class="playlist song" id="test">
-                    <img src="./img/albums/aperture.jpg" width="300px" height="300px" alt="Almost at 50%">
+                <a href="#" class="playlist song" data-path="./audio/Epic Games - Dusk Horizon.mp3">
+                    <img src="./img/albums/unreal.jpg" width="300px" height="300px" alt="Dusk Horizon">
                     <div>
-                        <p>Aperture Science Psychoacoustic Laboratories - Almost at 50%</p>
+                        <p>Epic Games - Dusk Horizon</p>
                     </div>
                 </a>
 
-                <a href="" class="playlist song" id="test">
-                    <img src="./img/albums/aperture.jpg" width="300px" height="300px" alt="Almost at 50%">
+                <a href="#" class="playlist song" data-path="./audio/Firelake - Dirge for the Planet.mp3">
+                    <img src="./img/albums/firelake.jpg" width="300px" height="300px" alt="Dirge for the Planet">
                     <div>
-                        <p>Aperture Science Psychoacoustic Laboratories - Almost at 50%</p>
+                        <p>Firelake - Dirge for the Planet</p>
                     </div>
                 </a>
 
@@ -113,16 +121,17 @@
 
     <footer>
         <div>
-            <p id="trackTitle">Le nom de musique</p>
-            <div class="horizontal">
-                <button id="previous"><img src="./img/icons/previous.png" width="30" alt="<"></button>
-                <button id="play"><img src="./img/icons/play.png" width="30" alt="-"></button>
-                <button id="next"><img src="./img/icons/next.png" width="30" alt=">"></button>
-            </div>
             <div>
-                <button><img src="./img/icons/repeat.png" width="30" alt="Répéte"></button>
-                <button><img src="./img/icons/like.png" width="20" title="Favoriser" alt="Favoriser" class="openPopup"></button>
+                <p id="trackTitle">Simon Chylisnki - Abandon Ship</p>
             </div>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <button id="previous"><img src="./img/icons/previous.png" width="30" alt="Derniere"></button>
+                <button id="play" onclick="PlayPause()"><img src="./img/icons/play.png" width="40" alt="Jouer" id="playIcon"></button>
+                <button id="next"><img src="./img/icons/next.png" width="30" alt="Prochaine"></button>
+                <audio src="./audio/Simon Chylinski - Abandon Ship.mp3" id="audioSource"></audio>
+            </div>
+            <input type="range" value="40" id="volume" title="Volume" onchange="Ch()">
         </div>
     </footer>
     <script src="./js/clock.js"></script>

@@ -12,6 +12,7 @@
 
 body{
     background: #292929;
+    position: relative;
 }
 .noScroll{
     overflow-y: hidden;
@@ -106,19 +107,19 @@ nav a:hover::before, #currentNavBtn::before{
     filter: brightness(0.5);
 }
 .screen div{
+    padding: 20px;
     position: absolute;
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
-    padding: 20px;
     text-align: left;
     box-sizing: border-box;
 }
 .screen div h1{
-    font-size: 40px;
+    font-size: 3.5vw;
 }
 .screen div p{
-    font-size: 20px;
+    font-size: 1.2vw;
 }
 
 .screen.small{
@@ -171,7 +172,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 30px;
+    padding: 40px 0;
     background: rgb(14, 14, 14);
 }
 footer p{
@@ -190,13 +191,7 @@ footer #copyright{
     backdrop-filter: blur(15px);
     display: none;
     z-index: 9999;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
 }
-
 .popup{
     padding: 20px;
     top: 50%;
@@ -337,7 +332,7 @@ footer #copyright{
     align-items: center;
     text-align: left;
     width: 320px;
-    min-width: 200px;
+    min-width: 300px;
     background: #1E1E1E;
     color: white;
 }
