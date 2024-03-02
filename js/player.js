@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       ChangeVolume();
       audioSource.play();
+      playIcon.src = './img/icons/pause.png';
     }
   
     function PlayPause() {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/player.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link type="image/x-icon" href="./img//favicon.ico" rel="icon">
     <script src="./js/jquery-3.7.1.min.js"></script>
     <title>AuA Musique|Écouter</title>
@@ -38,10 +39,21 @@
     </header>
     
     <main>
-        <input type="text" class="textField" placeholder="Rechercher...">
+        <div class="screen small" id="fourth">
+            <img src="./img/player.jpg" alt="">
+            <div>
+                <h3>Nous recherchons des développeurs!</h3>
+                <p>
+                    Nous recherchons des programmeurs, UX/UI créateurs, musiciens et des testeurs. Vous avez du talent! Proposez votre portfolio <a href="mailto:mihbo2006@gmail.com" class="link">ici</a>. Nous avons BESOIN DE VOUS!
+                </p>
+            </div>
+        </div>
+
+        <input type="text" class="textField" placeholder="Rechercher..." id="search">
+
         <div class="playlists">
             <h1>Les pistes des jeux-vidéos</h1>
-            <div class="horizontal" id="carousel">
+            <div class="horizontal wrap">
                 <a href="#" class="playlist song" data-path="./audio/Simon Chylinski - Abandon Ship.mp3">
                     <img src="./img/albums/subnautica.jpg" width="300px" height="300px" alt="Deep Blue">
                     <div>
@@ -70,28 +82,18 @@
                     </div>
                 </a>
 
-                <a href="#" class="playlist song" data-path="./audio/Epic Games - Dusk Horizon.mp3">
-                    <img src="./img/albums/unreal.jpg" width="300px" height="300px" alt="Dusk Horizon">
-                    <div>
-                        <p>Epic Games - Dusk Horizon</p>
-                    </div>
-                </a>
-
                 <a href="#" class="playlist song" data-path="./audio/Firelake - Dirge for the Planet.mp3">
                     <img src="./img/albums/firelake.jpg" width="300px" height="300px" alt="Dirge for the Planet">
                     <div>
                         <p>Firelake - Dirge for the Planet</p>
                     </div>
                 </a>
-
-                <button onclick="Previous()" class="previousBtn"><img src="" width="20px" height="20px" alt="<"></button>
-                <button onclick="Next()" class="nextBtn"><img src="" width="20px" height="20px" alt=">"></button>
             </div>
         </div>
 
         <div class="playlists">
             <h1>Soft Rock</h1>
-            <div class="horizontal">
+            <div class="horizontal wrap">
                 <a href="" class="playlist">
                     <img src="./img/albums/faunts.jpg" width="300px" height="300px" alt="Faunts">
                     <div>
@@ -115,7 +117,72 @@
                         <span>Eagles/</span><span>1985</span>
                     </div>
                 </a>
+
+                <a href="" class="playlist">
+                    <img src="./img/albums/ds.jpg" width="300px" height="300px" alt="Dire Straits">
+                    <div>
+                        <p>Dire Straits</p>
+                        <span>Dire Straits/</span><span>1978</span>
+                    </div>
+                </a>
+
+                <a href="" class="playlist">
+                    <img src="./img/albums/fleetwoodmac.jpg" width="300px" height="300px" alt="Fleetwood Mac">
+                    <div>
+                        <p>Bare Trees</p>
+                        <span>Fleetwood Mac/</span><span>1972</span>
+                    </div>
+                </a>
             </div>  
+        </div>
+
+        <div class="playlists">
+            <h1>Les playlistes de mois</h1>
+            <div class="horizontal wrap">
+                <a href="" class="playlist">
+                    <img src="./img/albums/serenity.jpg" width="300px" height="300px">
+                    <div>
+                        <p>OST Relaxe</p>
+                        <span>Plusiers auteurs/</span><span>2024</span>
+                    </div>
+                </a>
+
+                <a href="" class="playlist">
+                    <img src="./img/albums/snow.jpg" width="300px" height="300px">
+                    <div>
+                        <p>Ambience d'hiver</p>
+                        <span>øneheart, serj.../</span><span>2024</span>
+                    </div>
+                </a>
+
+                <a href="" class="playlist">
+                    <img src="./img/albums/classical.jpg" width="300px" height="300px">
+                    <div>
+                        <p>L'orchestre classique</p>
+                        <span>Bach, Strauss.../</span><span>1600-1900</span>
+                    </div>
+                </a>
+
+                <a href="" class="playlist">
+                    <img src="./img/albums/bitbreak.jpg" width="300px" height="300px">
+                    <div>
+                        <p>Bitbreak Foreverending</p>
+                        <span>Plusiers auteurs/</span><span>2017</span>
+                    </div>
+                </a>
+
+                <a href="" class="playlist">
+                    <img src="./img/albums/dubtechno.jpg" width="300px" height="300px">
+                    <div>
+                        <p>Dub Techno</p>
+                        <span>Rob Jenkins/</span><span>2018-2024</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div>
+
         </div>
     </main>
 
@@ -131,11 +198,12 @@
                 <button id="next"><img src="./img/icons/next.png" width="30" alt="Prochaine"></button>
                 <audio src="./audio/Simon Chylinski - Abandon Ship.mp3" id="audioSource"></audio>
             </div>
-            <input type="range" value="40" id="volume" title="Volume" onchange="Ch()">
+            <input type="range" value="40" id="volume" title="Volume">
         </div>
     </footer>
     <script src="./js/clock.js"></script>
     <script src="./js/player.js"></script>
     <script src="./js/popup.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 </html>

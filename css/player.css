@@ -35,5 +35,14 @@ footer button{
 }
 
 main{
-    margin: 100px 0;
+    margin: 0 0 200px 0;
+}
+
+#search{
+    margin-top: 60px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.screen.small{
+    height: 60vh;
 }

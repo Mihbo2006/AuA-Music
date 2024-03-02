@@ -1,7 +1,23 @@
-@media screen and (max-width: 700px){
-    nav{
-        padding: 20px;
+/*This file is used both in main page and player page*/
+
+@media screen and (max-width: 1135px){
+    .playlists{
+        margin-left: 0;
     }
+    .playlists .horizontal{
+        justify-content: center;
+    }
+
+    .playlist{
+        max-width: 20vw;
+    }
+    .playlist img{
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+@media screen and (max-width: 700px){
     nav img{
         display: none;
     }
@@ -18,7 +34,10 @@
     }
 
     .slide{
-        margin: 10px;
+        margin: 20px 10px;
+    }
+    .slide img{
+        width: 40vw;
     }
     .slide div{
         padding: 20px;
@@ -27,14 +46,40 @@
         left: 0;
         right: 0;
         bottom: 0;
+        font-size: 5vw;
     }
     .slide div span{
         color: white;
     }
+
     .card{
         margin: 15px 0;
     }
     .card.bigger{
         width: 400px;
+    }
+
+    .playlists{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #clockContainer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1390px){
+    #premium .card{
+        padding: 30px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1140px){
+    #premium{
+        align-items: center;
+        flex-direction: column;
+        width: 320px;
     }
 }

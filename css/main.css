@@ -67,8 +67,8 @@ nav a{
     position: relative;
 }
 nav a:hover, #currentNavBtn{
-    color: rgb(255, 116, 116);
-    text-shadow: 0 0 20px red;
+    color: #ff8300;
+    text-shadow: 0 0 20px #ff8300;
 }
 nav a::before{
     content: '';
@@ -83,8 +83,8 @@ nav a::before{
 }
 nav a:hover::before, #currentNavBtn::before{
     width: 100%;
-    background: rgb(255, 116, 116);
-    box-shadow: 0 0 20px red;
+    background: #ff8300;
+    box-shadow: 0 0 20px #ff8300;
 }
 
 .link{
@@ -116,10 +116,10 @@ nav a:hover::before, #currentNavBtn::before{
     box-sizing: border-box;
 }
 .screen div h1{
-    font-size: 3.5vw;
+    font-size: 2.8vw;
 }
 .screen div p{
-    font-size: 1.2vw;
+    font-size: 1.7vw;
 }
 
 .screen.small{
@@ -132,39 +132,25 @@ nav a:hover::before, #currentNavBtn::before{
 .screen.small p{
     font-size: 16px;
 }
-
-.infoBlock{
-    margin: 80px 0;
-    padding: 30px 50px;
-    width: 50%;
-    text-align: center;
-    color: white;
-    background: #1E1E1E;
-    border-radius: 20px;
-    position: relative;
-    display: inline-block;
-}
-.infoBlock h3{
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 24px;
-}
-.infoBlock p{
-    position: relative;
-    top: 50%;
-    height: 50%;
-    font-size: 16px;
+/*Screen scroll animations*/
+.anim{
+    transition: 0.5s;
 }
 
-.infoBlock img{
-    margin: 80px 0;
-    padding: 30px 50px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: white;
-    position: relative;
-    object-fit: cover;
+.screen .anim{
+    transform: translateX(-50px);
+    opacity: 0;
+}
+.screen.animate .anim{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#second .anim{
+    transform: translateY(50px);
+}
+#second.animate .anim{
+    transform: translateY(0);
 }
 
 footer{
@@ -313,7 +299,6 @@ footer #copyright{
 }
 .horizontal.wrap{
     flex-wrap: wrap;
-    justify-content: center;
 }
 .vertical{
     display: flex;
@@ -323,8 +308,12 @@ footer #copyright{
     color: red;
 }
 
+#premium{
+    justify-content: center;
+}
+
 .card{
-    margin: 5px;
+    margin: 10px;
     padding: 40px;
     display: flex;
     justify-content: center;
@@ -374,6 +363,7 @@ footer #copyright{
 }
 
 .playlists{
+    margin-top: 30px;
     margin-left: auto;
     width: 90%;
     text-align: left;
@@ -392,7 +382,7 @@ footer #copyright{
     text-align: left;
 }
 .playlist div p{
-    color: red;
+    color: rgb(186, 0, 0);
     font-size: 20px;
 }
 .playlist div span{
@@ -404,16 +394,19 @@ footer #copyright{
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
 
-#carousel{
-    width: 100%;
-    overflow-x: hidden;
-    position: relative;
+input[type="range"]{
+    -webkit-appearance: none;
+    background: #b25b00;
+    border-radius: 50px;
+    height: 8px;
+    box-shadow: inset 0 -2px 3px rgba(0,0,0,0.3);
 }
-#carousel .previousBtn{
-    position: absolute;
-    left: 0;
-}
-#carousel .nextBtn{
-    position: absolute;
-    right: 0;
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 50px; 
+    cursor: pointer;
+    background: rgb(14, 14, 14);
 }
