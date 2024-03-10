@@ -1,5 +1,5 @@
-/*This file is used both in main page and player page*/
-
+/*Cette fichier est utilisée à la page principale et à la page de player*/
+/*On change la taille des playlistes*/
 @media screen and (max-width: 1135px){
     .playlists{
         margin-left: 0;
@@ -16,7 +16,7 @@
         height: 20vw;
     }
 }
-
+/*L'adaptation pour les mobiles*/
 @media screen and (max-width: 700px){
     nav img{
         display: none;

@@ -4,6 +4,7 @@
     font-weight: lighter;
 }
 
+/*Le footer est le panel de player, alors on le fixe au-dessous*/
 footer{
     padding: 5px;
     display: flex;

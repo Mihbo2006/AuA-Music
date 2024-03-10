@@ -1,3 +1,4 @@
+/*La mise en place basique de la page*/
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ body{
     background: #292929;
     position: relative;
 }
+/*Pour la fenêtre de dialogue pour que l'utilisateur ne pourra pas défiler la page*/
 .noScroll{
     overflow-y: hidden;
 }
@@ -86,14 +88,14 @@ nav a:hover::before, #currentNavBtn::before{
     background: #ff8300;
     box-shadow: 0 0 20px #ff8300;
 }
-
+/*L'hyperlien*/
 .link{
     color: red;
 }
 .link:hover{
     text-decoration: underline;
 }
-
+/*Les écrans*/
 .screen{
     position: relative;
     width: 100%;
@@ -136,7 +138,7 @@ nav a:hover::before, #currentNavBtn::before{
 .anim{
     transition: 0.5s;
 }
-
+/*2 animations d'écran*/
 .screen .anim{
     transform: translateX(-50px);
     opacity: 0;
@@ -168,7 +170,7 @@ footer #copyright{
     color: #8E8E8E;
     font-weight: bold;
 }
-
+/*Les fenêtres de dialogue*/
 .popupBG{
     width: 100%;
     height: 100%;
@@ -311,7 +313,7 @@ footer #copyright{
 #premium{
     justify-content: center;
 }
-
+/*Cardes de genres et d'auteurs*/
 .card{
     margin: 10px;
     padding: 40px;
@@ -361,7 +363,7 @@ footer #copyright{
     font-size: 18px;
     border: none;
 }
-
+/*Le conteneur des playlistes*/
 .playlists{
     margin-top: 30px;
     margin-left: auto;
@@ -369,7 +371,7 @@ footer #copyright{
     text-align: left;
     color: white;
 }
-
+/*Les playlistes*/
 .playlist{
     margin: 20px;
     background: rgb(14, 14, 14);
@@ -388,12 +390,11 @@ footer #copyright{
 .playlist div span{
     color: white;
 }
-
 .playlist:hover{
     transform: scale(1.05);
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
-
+/*Pour adapter au design*/
 input[type="range"]{
     -webkit-appearance: none;
     background: #b25b00;
