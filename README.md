@@ -1,0 +1,2 @@
+# AuA Music front page
+**AuA Music** (or how I transcribe it - **A**udio **U**ser **A**pplications) is my design idea for an imaginary music streaming service company's front page. The page includes the presentation of the service, pricing policy, most popular and favorite musicians, and even a music player page. This page is **NOT** copyrighted, of course; this is just my personal project to present my front-end skills. The page is designed in a modern flat style with an accent on the color red and abstract images.
