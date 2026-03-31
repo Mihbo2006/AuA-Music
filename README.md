@@ -4,3 +4,4 @@
 <img width="2560" height="1237" alt="зображення" src="https://github.com/user-attachments/assets/04ab7389-6651-48ae-8be7-474fccd27e5f" />
 <img width="2560" height="1237" alt="зображення" src="https://github.com/user-attachments/assets/a8983778-4a5e-404b-af00-d2709a216aad" />
 <img width="2560" height="1237" alt="зображення" src="https://github.com/user-attachments/assets/154bc82f-07da-4896-af20-1574a806d7b3" />
+<img width="2560" height="1237" alt="зображення" src="https://github.com/user-attachments/assets/b5c299a0-699e-4a6c-ab18-a0486c943a27" />
